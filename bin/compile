@@ -15,7 +15,5 @@ function indent() {
   esac
 }
 
-if [ -f ".extra" ]; then
-  echo "-----> Running extra build steps"
-  ./.extra 2>&1 | indent
-fi
+echo "-----> Running extra build steps"
+$1/.extra 2>&1 | indent
