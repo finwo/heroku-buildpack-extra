@@ -21,6 +21,7 @@ function indent() {
 
 echo "-----> Loading environment variables"
 if [ -d "$ENV_DIR" ]; then
+  ls $ENV_DIR
   for e in $(ls $ENV_DIR); do
       echo "$e" | grep -E "$whitelist_regex" | grep -qvE "$blacklist_regex" && {
         echo $e | indent
