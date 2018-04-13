@@ -28,6 +28,8 @@ if [ -d "$ENV_DIR" ]; then
       }
       :
   done
+else
+  echo "Environment directory does not exist" | indent
 fi
 
 
