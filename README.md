@@ -32,15 +32,15 @@ gulp build
 
 ## Contributing
 
-After checking the [Github issues](http://github.com/finwo/heroku-buildpack-extra/issues) and confirming that your request isn't already being worked on, feel free to spawn a new fork of the `develop` branch & send in a pull request. Keep in mind to describe what your intent is and why you want the feature you've just build merged into the main repository.
+First, look at the [issues page](https://github.com/finwo/heroku-buildpack-extra/issues) to ensure your issue isn't already known. If it's not, you can create a new issue with a detailed description of what happened & how to reproduce the unexpected behavior.
 
-The `develop` branch is merged into the `master` periodically after confirming it's stable, to ensure the master always contains a production-ready version.
+If you decide to take on the challenge of fixing a known (or unknown) issue, you can do so by sending in a pull request from your own fork of the project. Once it has been tested and approved, it will be merged into the master branch of the repository.
 
 ## License
 
 MIT License
 
-Copyright (c) 2016 Virtual PC Services B.V.
+Copyright (c) 2018 Finwo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
