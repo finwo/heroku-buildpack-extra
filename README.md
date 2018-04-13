@@ -8,13 +8,13 @@ Need extra steps like gulp, a custom permission script or something more exotic?
 ## Installation
 
 #### Heroku toolchain
-```
+```sh
 heroku buildpacks:add "https://github.com/finwo/heroku-buildpack-extra.git"
 ```
 
 #### `.buildpacks` file
 
-```
+```sh
 echo "https://github.com/finwo/heroku-buildpack-extra.git" >> /path/to/app/.buildpacks
 ```
 
@@ -23,7 +23,7 @@ echo "https://github.com/finwo/heroku-buildpack-extra.git" >> /path/to/app/.buil
 Create or modify the `.extra` file inside your app's root directory. It's run like a regular executable, so feel free to make this a bash script, nodejs script or any other system executable.
 
 Example:
-```
+```sh
 #!/usr/bin/env bash
 
 # Run the gulp build task
