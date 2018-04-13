@@ -8,9 +8,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-whitelist_regex=${2:-''}
-blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD)$'}
-
 function indent() {
   c='s/^/       /'
   case $(uname) in
@@ -21,13 +18,9 @@ function indent() {
 
 echo "-----> Loading environment variables"
 if [ -d "$ENV_DIR" ]; then
-  ls $ENV_DIR
   for e in $(ls $ENV_DIR); do
-      echo "$e" | grep -E "$whitelist_regex" | grep -qvE "$blacklist_regex" && {
-        echo $e | indent
-        export "$e=$(cat $ENV_DIR/$e)"
-      }
-      :
+      echo "Importing $e" | indent
+      export "$e=$(cat $ENV_DIR/$e)"
   done
 else
   echo "Environment directory does not exist" | indent
