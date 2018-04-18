@@ -1,6 +1,8 @@
 Heroku buildpack: extra
 =======================
 
+[![Codetree](https://codetree.com/images/managed-with-codetree.svg)](https://codetree.com/projects/gX1r)
+
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for adding custom steps to building your application.
 
 Need extra steps like gulp, a custom permission script or something more exotic? You can now add them using this buildpack to prevent your endless search for the right tools.
