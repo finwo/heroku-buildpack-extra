@@ -28,4 +28,4 @@ fi
 
 
 echo "-----> Running extra build steps"
-$1/.extra 2>&1 | indent
+$1/.extra "$@" 2>&1 | indent
